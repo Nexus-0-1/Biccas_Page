@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s ease-in all;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background: linear-gradient(to top right, #fff, #d4faed);
+    height: 150vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo img {
+    height: 20px;
+}
+
+.navbar {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    text-align: end;
+}
+
+.navbar a {
+    color: #848484;
+    padding: 0 1.2rem;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+.login-sign {
+    padding-left: 52px;
+}
+
+.icons {
+    color: #010101;
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+button {
+    background-color: #54bb95;
+    border: none;
+    padding: 10px 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.login-sign button a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media(max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #1c1c1cd0;
+        width: 100%;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: #fff;
+        display: block;
+        margin: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* END OF NAVBAR AND HEAD SECTION */
+
+/* Start of the home area */
